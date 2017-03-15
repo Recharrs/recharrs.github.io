@@ -107,7 +107,7 @@ h5 {
 
 @media (max-width: 768px) {
 	.feature-picture {
-		max-height: 100px;
+		max-height: 350px;
 	}
 }
 
