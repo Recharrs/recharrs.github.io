@@ -8,11 +8,19 @@ h5 {
     line-height: 2rem;
 }
 
+/* --- header --- */
 .icon{
     width: 32px;
     height: 32px;
     margin-right: 5px; 
 }
+@media(max-width: 576px){
+    .navbar-brand{
+        margin-top: -35px; 
+        text-align: center;
+    } 
+}
+
 
 /* ------ banner ------- */
 #banner{
