@@ -70,6 +70,14 @@ h5 {
     max-height: 450px;
 }
 
+.feature-picture-desktop {
+	display: inline;
+}
+.feature-picture-mobile {
+	display: none;
+}
+
+
 .big-frame {
     /*background-color: rgb(163, 162, 236);*/
     background: -webkit-linear-gradient(rgb(217, 217, 217),rgb(186, 186, 186));
@@ -92,9 +100,27 @@ h5 {
     background: linear-gradient(rgba(0, 0, 0, 0.03),rgba(0, 0, 0, 0.06));
 }
 
-.bg-color{
-
+@media (max-width: 870px) {
+	.feature-picture {
+		max-height: 400px;
+	}
 }
+
+@media (max-width: 768px) {
+	.feature-picture {
+		max-height: 350px;
+	}
+}
+
+@media (max-width: 678px) {
+	.feature-picture-desktop {
+		display: none;
+	}
+	.feature-picture-mobile {
+		display: inline;
+	}
+}
+
 /* ------- Downloads ------- */
 #Downloads::before{
     content: " ";
@@ -131,6 +157,14 @@ h5 {
     flex-direction: column;
 
     background: linear-gradient(rgba(200, 200, 180, 0.5),rgba(0, 203, 245, 1));
+}
+@media (max-width: 600px) {
+	.design-concept {
+		display: none;
+	}
+	#About-content{
+		height: 300px;
+	}
 }
 
 /* ------- footer ------- */
