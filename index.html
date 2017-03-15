@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
 
 <body id="nav">
@@ -22,15 +23,18 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul id="nav" class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#Feature-intro">Feature</a>
+                    <a class="nav-link"  href="#Feature-intro">Feature</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#get_item">Get</a>
+                    <a class="nav-link" href="#Downloads">Downloads</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#About">About</a>
                 </li>
             </ul>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#footer">About</a>
+                    <a class="nav-link" href="#footer">Contact us</a>
                 </li>
             </ul>
         </div>
@@ -38,38 +42,39 @@
 	
     <div>
         <!-- banner -->
-        <div id="banner">
-            <div class="container">
-                <div class="row">
-                    <div class="col col-lg-8">
-                        <div class="col">
-                            <div class="row row-lg-4">
-                                <h1>TODO Farm</h1>
-                            </div>
-                            <div class="row row-lg-4">
-                                <p>
-                                    The perspective runs against the steer! The general discriminates? Behind whatever pencil walks the independence. The exhaustive temple spins an eleven prayer. The ill punch transmits a countryside. The perspective runs against the steer! The perspective runs against the steer! The general discriminates? Behind whatever pencil walks the independence. The exhaustive temple spins an eleven prayer. The ill punch transmits a countryside. The perspective runs against the steer!
-                                </p>
-                            </div>
-                            <div class="row row-lg-4">
-                                <button class="btn btn-primary">Primary</button>
-                            </div>
-                        </div>
+        <div id="banner" class="container-fluid row">
+            <div class="col col-2"></div>
+            <div id="banner-text" class="col col-4 d-flex wow fadeInLeft">
+                    <div></div>
+                    <div></div>
+                    <div class="row row-lg-4">
+                        <h1>TODO Farm</h1>
                     </div>
-                    <div class="col col-lg-4">
-                        <img src="./images/feature5.png">
+                    <div class="row row-lg-4">
+                        <h5>
+	                        紀錄您的生活大小事，圖表化分析所有進度，讓您更有效地利用每分每秒
+	                    </h5>
                     </div>
-                </div>
+                    <div class="row row-lg-4">
+                        <div onclick="scrollTo()" id="scroll-down" class="btn btn-primary">More Info</div>
+                    </div>
+                    <div></div>
+                    <div></div>
+            </div>
+            <div class="col col-1"></div>
+            <div class="col col-4">
+                <img src="./images/feature5.png" style="padding-left: 30px">
             </div>
         </div>
 
-        <!-- Introduction -->
+       <!-- Introduction -->
         <div id="Feature-intro">
             <div class="wrapper">
                 <div class="row align-items-center flex-sm-row-reverse feature text-center container">
-                    <div class="col-lg-6">
-                        <h3>特色一</h3>
-                        <h5>小標題</h5>
+                    <div class="col-lg-6 wow fadeInRight">
+                        <!-- change -->
+                        <h3>分類群組</h3> <br>
+                        <h5>把待辦事項分門別類，不只更好管理，還可以更快找出特定任務。tag標籤讓您可以更有彈性的使用管理待辦事項。</h5>
                     </div>
                     <div class="col-lg-6">
                         <img src="images/feature5.png" alt="" class="feature-picture">
@@ -79,9 +84,10 @@
 
             <div class="wrapper">
                 <div class="row align-items-center feature text-center container">
-                    <div class="col-lg-6">
-                        <h3>特色二</h3>
-                        <h5>小標題</h5>
+                    <div class="col-lg-6 wow fadeInLeft">
+                        <!-- change -->
+                        <h3>圖表分析</h3> <br>
+                        <h5>透過圖形化的統計，更能一目了然各個事項的比重以及任務的完成進度。</h5>
                     </div>
                     <div class="col-lg-6">
                         <img src="images/feature2.png" alt="" class="feature-picture">
@@ -91,9 +97,10 @@
 
             <div class="wrapper">
                 <div class="row align-items-center flex-sm-row-reverse feature text-center container">
-                    <div class="col-lg-6">
-                        <h3>特色三</h3>
-                        <h5>小標題</h5>
+                    <div class="col-lg-6 wow fadeInRight">
+                        <!-- change -->
+                        <h3>追溯過去的足跡</h3> <br>
+                        <h5>歷史紀錄讓您更容易掌控生活的節奏。根據過去的完成紀錄改善新的計劃，讓您成為時間的主人。</h5>
                     </div>
                     <div class="col-lg-6">
                         <img src="images/feature1.png" alt="" class="feature-picture">
@@ -103,9 +110,10 @@
 
             <div class="wrapper">
                 <div class="row align-items-center feature text-center container">
-                    <div class="col-lg-6">
-                        <h3>特色四</h3>
-                        <h5>小標題</h5>
+                    <div class="col-lg-6 wow fadeInLeft">
+                        <!-- change -->
+                        <h3>雲端同步</h3> <br>
+                        <h5>不論何時何處皆可隨意查看，資料自動備份在雲端不怕遺失。</h5>
                     </div>
                     <div class="col-lg-6">
                         <img src="images/feature3.png" alt="" class="feature-picture">
@@ -115,9 +123,10 @@
 
             <div class="wrapper">
                 <div class="col align-items-center feature text-center container">
-                    <div>
-                        <h3>特色五</h3>
-                        <h5>小標題</h5>
+                    <div class="wow fadeInDown">
+                        <!-- change -->
+                        <h3>互助系統</h3> <br>
+                        <h5>怕無法如期達成目標嗎？讓朋友監督你的進度吧！</h5> <br>
                     </div>
                     <div>
                         <img src="images/feature4.png" alt="" class="feature-picture">
@@ -126,12 +135,31 @@
             </div>
         </div>
 
-        <!-- Get  -->
+        <!-- Downloads  -->
+        <div id="Downloads">
+            <div id="Downloads-content" class="d-flex">
+                <h1>下載：現在準備中</h1>
+                <p>抱歉，現在程式正在準備中。不過，您可以給予我們意見</p>
+                <a class="btn btn-success btn-lg" href="#Feature-intro">幫助我們，得到更好用的應用程式</a></div>
+            </div>
+        </div>
+
+        <!-- About -->
+        <div id="About">
+        	<div id="About-content" class="d-flex">
+                <h1>關於</h1>
+                <p>
+                    我們是一群有志向的大學生
+                </p>
+            </div>
+        </div>
+
+
+        <!-- footer -->
         <div id="get_item">
             <img src="./images/Cover.png">
         </div>
 
-        <!-- footer -->
         <div id="footer">
             Contact to us : TODOfarm@gmail.com <br>
             Copyright &#9400; 2017
@@ -142,5 +170,15 @@
 	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <script src="./scripts/wow.min.js"></script>
+    <script scr="./scripts/main.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        new WOW().init();
+
+        function scrollTo(){
+            $('html, body').animate({ scrollTop: $('#Feature-intro').offset().top }, 'slow');
+        }
+    </script>
 </body>
 </html>
