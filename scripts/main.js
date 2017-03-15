@@ -1,3 +1,7 @@
+function scroll_Top(){
+	$('html, body').animate({scrollTop: 0}, 1000)
+}
+
 function scroll_to_Feature(){
 	$('html, body').animate({scrollTop: $('#Feature-intro').offset().top}, 500);
 }
