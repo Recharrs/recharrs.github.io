@@ -101,13 +101,13 @@ h5 {
 
 @media (max-width: 870px) {
 	.feature-picture {
-		max-height: 200px;
+		max-height: 400px;
 	}
 }
 
 @media (max-width: 768px) {
 	.feature-picture {
-		max-height: 350px;
+		max-height: 100px;
 	}
 }
 
