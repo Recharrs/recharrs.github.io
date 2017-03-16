@@ -33,7 +33,7 @@ h5 {
    	position: relative;
    	background-size: cover;
     background-image: url("../images/banner.jpg");
-    background-attachment: center;
+    background-attachment: repeat;
 
     overflow: hidden;
     text-align: left;
