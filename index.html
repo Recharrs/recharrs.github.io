@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
-    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
     <!-- boostrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <!-- animation -->
@@ -22,12 +21,12 @@
 <body>
     <!-- navbar -->
     <nav class="navbar fixed-top navbar-toggleable navbar-inverse bg-inverse anchor">
-        <button class         = "navbar-toggler navbar-toggler-right" 
-                type          = "button" 
-                data-toggle   = "collapse" 
-                data-target   = "#navbarNav" 
-                aria-controls = "navbarNav" 
-                aria-expanded = "false" 
+        <button class         = "navbar-toggler navbar-toggler-right"
+                type          = "button"
+                data-toggle   = "collapse"
+                data-target   = "#navbarNav"
+                aria-controls = "navbarNav"
+                aria-expanded = "false"
                 aria-label    = "Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -37,6 +36,9 @@
         </a>
         <div id="navbarNav" class="collapse navbar-collapse">
             <ul id="nav" class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" onclick="scroll_to_Description()">Description</a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" onclick="scroll_to_Feature()">Feature</a>
                 </li>
@@ -55,31 +57,29 @@
         </div>
     </nav>
 
-    <!-- banner -->   
-    <div id="banner">
-        <div id="banner-text" class="wow fadeInLeft">
-            <div>
-                <h1 id="TODOFARM">Life Tracker</h1>
-                <h3> 
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
-                    Tracking Your Life
-                </h3>
+    <!-- banner -->
+    <div id="masking">
+        <div id="banner">
+            <div id="banner-text">
+                <div>
+                    <h1 id="TODOFARM">Life Tracker</h1>
+                    <h5>Tracking Your Life</h5>
+                </div>
             </div>
-        </div>
-        <div id="banner-scroll" onclick="scroll_to_Feature()">
-            <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+            <div id="banner-scroll" onclick="scroll_to_Description()">
+                <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+            </div>
         </div>
     </div>
 
-    <!-- discription -->
-    <div id="discription">
-        <div id="discription-inner">
+    <!-- description -->
+    <div id="description">
+        <div id="description-inner">
             <div>
                 <header>
                     <h3>紀錄您的生活大小事</h3>
                 </header>
-                <p id="discription-text">
+                <p id="description-text">
                     The literary tutor comprehends the shoulder. A stone reads next to the lesbian. An originator habits a sterile companion. On top of your mouth grows the initiative woman.
                 </p>
             </div>
@@ -135,6 +135,16 @@
         </div>
     </div>
 
+    <!-- Downloads  -->
+    <div id="Downloads">
+        <!-- <div class="wow fadeInUpBig"> -->
+        <div id="Downloads-content" class="d-flex">
+            <h1 class="wow fadeIn" style="margin:1.2rem auto;">立即下載，讓您的生活更完美</h1>
+            <p class="downloads-context" style="margin:1.2rem auto;">很遺憾的，您錯過了第一次的試用機會，不過您可以前往下面連結的google表單填寫意見調查幫助我們，並留下您的e-mail來獲取最新資訊。</p>
+            <a aria-hidden="true" class="btn btn-success btn-lg container wow bounce fa fa-wpforms" style="margin:1.2rem auto;" href="https://docs.google.com/forms/d/1nktSd17qb-klsFtrDHTotlfoVsjKlfzGz31w7ShYX7E/viewform?edit_requested=true"> 幫助我們</a>
+        </div>
+    </div>
+
     <!-- About -->
     <div id="About">
         <div id="About-content" class="d-flex">
@@ -150,10 +160,6 @@
     </div>
 
     <!-- footer -->
-    <div id="get_item">
-        <img src="./images/Cover.png">
-    </div>
-
     <div id="footer">
         Contact to us : TODOfarm@gmail.com <br>
         Copyright &#9400; 2017
