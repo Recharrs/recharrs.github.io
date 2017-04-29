@@ -1,200 +1,176 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>TODO Farm</title>
+    <title>Life Tracker</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-	<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <!-- font awesome -->
     <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- boostrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!-- animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- style -->
     <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
-	<!-- header -->
-	<nav class="navbar fixed-top navbar-toggleable navbar-inverse bg-inverse anchor">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        	<span class="navbar-toggler-icon"></span>
+    <!-- navbar -->
+    <nav class="navbar fixed-top navbar-toggleable navbar-inverse bg-inverse anchor">
+        <button class         = "navbar-toggler navbar-toggler-right" 
+                type          = "button" 
+                data-toggle   = "collapse" 
+                data-target   = "#navbarNav" 
+                aria-controls = "navbarNav" 
+                aria-expanded = "false" 
+                aria-label    = "Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
-        <img class="icon" src="./images/icon.png">
 
-        <a class="navbar-brand" onclick="scroll_Top()" style="color: white; font-family: 'Courgette', cursive;">
-            TODO Farm
+        <a id="my_navbar_brand" class="navbar-brand" onclick="scroll_Top()">
+            Life Tracker
         </a>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div id="navbarNav" class="collapse navbar-collapse">
             <ul id="nav" class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a onclick="scroll_to_Feature()" class="nav-link">Feature</a>
+                    <a class="nav-link" onclick="scroll_to_Feature()">Feature</a>
                 </li>
                 <li class="nav-item">
-                    <a onclick="scroll_to_Download()" class="nav-link">Downloads</a>
+                    <a class="nav-link" onclick="scroll_to_Download()">Downloads</a>
                 </li>
                 <li class="nav-item">
-                    <a onclick="scroll_to_About()" class="nav-link">About</a>
+                    <a class="nav-link" onclick="scroll_to_About()">About</a>
                 </li>
             </ul>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a onclick="scroll_to_Contact()" class="nav-link">Contact us</a>
+                    <a class="nav-link" onclick="scroll_to_Contact()">Contact us</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <div>
-        <!-- banner -->
-        <div id="banner" class="container row">
-            <div class="col-12 col-sm-1 col-md-1 col-lg-1"></div>
-            <div id="banner-text" class="col-12 col-sm-7 col-md-6 col-lg-4 col d-flex wow fadeInLeft">
-                <div>
-                    <h1 id="TODOFARM">TODO Farm</h1><br>
-                    <h3>Plant Your Dream</h3>
-                </div>
-                <!-- <div class="sm-hidden"></div> -->
-                <!-- <div class="sm-hidden"></div> -->
-                <div>
-                    <h5>
-                        紀錄您的生活大小事，圖表化分析所有進度，讓您更有效地利用每分每秒
-                    </h5>
-                </div>
-                <div class="row-12 row-md-3">
-                    <div onclick="scroll_to_Feature()" id="scroll-down" class="btn btn-primary">More Info</div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-1 col-md-1 col-lg-1"></div>
-            <div class="col-12 col-sm-3 col-md-4 col-lg-4">
-                <img src="./images/feature0.png" style="padding-left: 30px">
+    <!-- banner -->   
+    <div id="banner">
+        <div id="banner-text" class="wow fadeInLeft">
+            <div>
+                <h1 id="TODOFARM">Life Tracker</h1>
+                <h3> 
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+                    Tracking Your Life
+                </h3>
             </div>
         </div>
+        <div id="banner-scroll" onclick="scroll_to_Feature()">
+            <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+        </div>
+    </div>
 
-       <!-- Introduction -->
-        <div id="Feature-intro">
-            <div class="wrapper">
-                <div class="row align-items-center flex-sm-row-reverse feature text-center container">
-					<div class="col-lg-6 wow fadeInRight">
-                        <h2>分類群組</h2> <br>
-                        <p>把待辦事項分門別類，不只更好管理，還可以更快找出特定任務。tag標籤讓您可以更有彈性的使用管理待辦事項。</p>
+    <!-- discription -->
+    <div id="discription">
+        <div id="discription-inner">
+            <div>
+                <header>
+                    <h3>紀錄您的生活大小事</h3>
+                </header>
+                <p id="discription-text">
+                    The literary tutor comprehends the shoulder. A stone reads next to the lesbian. An originator habits a sterile companion. On top of your mouth grows the initiative woman.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- feature -->
+    <div id='feature'>
+        <div id='feature-title'>
+            <h2>Featuring</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3><i class="fa fa-list" aria-hidden="true"></i>&nbsp;&nbsp;Something</h3>
+                    <div class="text">
+                        <p>The imaginative operator flashes. Why can't the circle glow behind the imposing novice? The environmental significance smells below the unpredictable studio.</p>
                     </div>
-                    <div class="col-lg-6">
-                        <img src="images/feature5.png" alt="" class="feature-picture">
+                </div>
+                <div class="col-md-4">
+                    <h3><i class="fa fa-list" aria-hidden="true"></i>&nbsp;&nbsp;Something</h3>
+                    <div class="text">
+                        <p>The imaginative operator flashes. Why can't the circle glow behind the imposing novice? The environmental significance smells below the unpredictable studio.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h3><i class="fa fa-list" aria-hidden="true"></i>&nbsp;&nbsp;Something</h3>
+                    <div class="text">
+                        <p>The imaginative operator flashes. Why can't the circle glow behind the imposing novice? The environmental significance smells below the unpredictable studio.</p>
                     </div>
                 </div>
             </div>
-
-            <div class="wrapper">
-                <div class="row align-items-center feature text-center container">
-					<div class="col-lg-6 wow fadeInLeft">
-                        <h2>雲端同步</h2> <br>
-                        <p>不論何時何處皆可隨意查看，資料自動備份在雲端不怕遺失。</p>
-                    </div>
-					<div class="col-lg-6">
-                        <img src="images/feature2.png" alt="" class="feature-picture">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3><i class="fa fa-list" aria-hidden="true"></i>&nbsp;&nbsp;Feature1</h3>
+                    <div class="text">
+                        <p>The imaginative operator flashes. Why can't the circle glow behind the imposing novice? The environmental significance smells below the unpredictable studio.</p>
                     </div>
                 </div>
-            </div>
-
-            <div class="wrapper">
-                <div class="row align-items-center flex-sm-row-reverse feature text-center container">
-					<div class="col-lg-6 wow fadeInRight">
-                        <h3>圖表分析</h3> <br>
-                        <p>透過圖形化的統計，更能一目了然各個事項的比重以及任務的完成進度。</p>
-                    </div>
-					<div class="col-lg-6">
-                        <img src="images/feature1.png" alt="" class="feature-picture">
+                <div class="col-md-4">
+                    <h3><i class="fa fa-list" aria-hidden="true"></i>&nbsp;&nbsp;Feature2</h3>
+                    <div class="text">
+                        <p>The imaginative operator flashes. Why can't the circle glow behind the imposing novice? The environmental significance smells below the unpredictable studio.</p>
                     </div>
                 </div>
-            </div>
-
-            <div class="wrapper">
-                <div class="row align-items-center feature text-center container">
-					<div class="col-lg-6 wow fadeInLeft">
-                        <h3>追溯過去的足跡</h3> <br>
-                        <p>歷史紀錄讓您更容易掌控生活的節奏。根據過去的完成紀錄改善新的計劃，讓您成為時間的主人。</p>
-                    </div>
-					<div class="col-lg-6">
-                        <img src="images/feature3.png" alt="" class="feature-picture">
-                    </div>
-                </div>
-            </div>
-
-			<div class="wrapper">
-                <div class="row align-items-center flex-sm-row-reverse feature text-center container">
-					<div class="col-lg-6 wow fadeInRight">
-                        <h3>充滿趣味</h3> <br>
-                        <p>透過完成任務來獲得更多種子，一起來經營屬於自己的農場吧！成熟的作物可以兌換成更具有特色的主題，讓您的TODO Farm更具有個人風格。</p>
-                    </div>
-					<div class="col-lg-6">
-                        <img src="images/feature6.png" alt="" class="feature-picture">
-                    </div>
-                </div>
-            </div>
-
-            <div class="wrapper">
-                <div class="col align-items-center feature text-center container">
-                    <div class="wow fadeInDown">
-                        <h3>互助系統</h3> <br>
-                        <p>怕無法如期達成目標嗎？讓朋友監督你的進度吧！</p> <br>
-                    </div>
-                    <div>
-                        <img src="images/feature4.png" alt="" class="feature-picture feature-picture-desktop">
-						<img src="images/feature41.png" alt="" class="feature-picture feature-picture-mobile">
+                <div class="col-md-4">
+                    <h3><i class="fa fa-list" aria-hidden="true"></i>&nbsp;&nbsp;Feature3</h3>
+                    <div class="text">
+                        <p>The imaginative operator flashes. Why can't the circle glow behind the imposing novice? The environmental significance smells below the unpredictable studio.</p>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Downloads  -->
-        <div id="Downloads">
-			<!-- <div class="wow fadeInUpBig"> -->
-        	<div id="Downloads-content" class="d-flex">
-				<h1 class="wow fadeIn" style="margin:1.2rem auto;">立即下載，讓您的生活更完美</h1>
-                <p class="downloads-context" style="margin:1.2rem auto;">很遺憾的，您錯過了第一次的試用機會，不過您可以前往下面連結的google表單填寫意見調查幫助我們，並留下您的e-mail來獲取最新資訊。</p>
-                <a aria-hidden="true" class="btn btn-success btn-lg container wow bounce fa fa-wpforms" style="margin:1.2rem auto;" href="https://docs.google.com/forms/d/1nktSd17qb-klsFtrDHTotlfoVsjKlfzGz31w7ShYX7E/viewform?edit_requested=true"> 幫助我們</a></div>
-        	</div>
-			<!-- </div> -->
-        </div>
-
-        <!-- About -->
-        <div id="About">
-        	<div id="About-content" class="d-flex">
-				<div>
-					<h1 style="margin:1.2rem auto; ">關於我們</h1>
-					<h5 class="downloads-context" style="margin:1.2rem auto; ">我們是一群有志向的大學生，希望透過寫程式來改變這個世界。</h5>
-				</div>
-				<div class="design-concept">
-					<h1 style="margin:1.2rem auto; ">設計理念</h1>
-					<p class="downloads-context" style="margin:1.2rem auto; ">TODO list是一個待辦事項的集合地，每個人都會將需要做的事情放在這裏。每增加一件行程，就像是在時間的農場裡種下一顆種子，需要時間來使他成熟，更需要你的用心培養。為此，我們將會讓使用者可以藉由自動生成的圖表追蹤進行中的計畫以及過去的時間分配，並計畫在未來將“農場”的概念以遊戲的方式結合到應用程式中，讓大家可以更容易、具體的觀察到自己是否有按照進度達成任務。</p>
-				</div>
+    <!-- About -->
+    <div id="About">
+        <div id="About-content" class="d-flex">
+            <div>
+                <h1 style="margin:1.2rem auto; ">關於我們</h1>
+                <h5 class="downloads-context" style="margin:1.2rem auto; ">我們是一群有志向的大學生，希望透過寫程式來改變這個世界。</h5>
+            </div>
+            <div class="design-concept">
+                <h1 style="margin:1.2rem auto; ">設計理念</h1>
+                <p class="downloads-context" style="margin:1.2rem auto; ">TODO list是一個待辦事項的集合地，每個人都會將需要做的事情放在這裏。每增加一件行程，就像是在時間的農場裡種下一顆種子，需要時間來使他成熟，更需要你的用心培養。為此，我們將會讓使用者可以藉由自動生成的圖表追蹤進行中的計畫以及過去的時間分配，並計畫在未來將“農場”的概念以遊戲的方式結合到應用程式中，讓大家可以更容易、具體的觀察到自己是否有按照進度達成任務。</p>
             </div>
         </div>
+    </div>
+
+    <!-- footer -->
+    <div id="get_item">
+        <img src="./images/Cover.png">
+    </div>
+
+    <div id="footer">
+        Contact to us : TODOfarm@gmail.com <br>
+        Copyright &#9400; 2017
+    </div>
 
 
-        <!-- footer -->
-        <div id="get_item">
-            <img src="./images/Cover.png">
-        </div>
-
-        <div id="footer">
-            Contact to us : TODOfarm@gmail.com <br>
-            Copyright &#9400; 2017
-        </div>
-
-
-	<!-- script -->
-	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
     <script src="./scripts/wow.min.js"></script>
     <script>
             new WOW().init();
     </script>
 
-	<script src="./scripts/main.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./scripts/main.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>

@@ -3,11 +3,11 @@ function scroll_Top(){
 }
 
 function scroll_to_Feature(){
-	$('html, body').animate({scrollTop: $('#Feature-intro').offset().top}, 500);
+	$('html, body').animate({scrollTop: $('#discription').offset().top - 55}, 500);
 }
 
 function scroll_to_Download(){
-	$('html, body').animate({scrollTop: $('#Downloads').offset().top}, 500);
+	$('html, body').animate({scrollTop: $('#feature').offset().top - 55}, 500);
 }
 
 function scroll_to_About(){
