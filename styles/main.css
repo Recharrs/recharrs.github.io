@@ -112,9 +112,10 @@ header {
 }
 
 #description-text {
-    padding-left: 6em;
-    padding-right: 4em;
     margin: 2em 0 0 0;
+
+    text-align: center;
+    padding: 0 3em;
 }
 
 /* --- feature --- */
@@ -128,6 +129,7 @@ font-family: "Lato", sans-serif;
 }
 #feature-title{
     height: 60px;
+    line-height: 60px;
 
     display: table;
     margin: 1em auto;
