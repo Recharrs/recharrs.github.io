@@ -1,15 +1,10 @@
+var $window = $(window), $mask = $('#masking');
+
 $(window).on('load', function() {
-    var $window = $(window),
-        $mask = $('#masking');
-
     // Disable animations/transitions until the page has loaded.
-    $mask.addClass('is-loading');
-
-    $window.on('load', function() {
-        $window.setTimeout(function() {
-            $mask.removeClass('is-loading');
-        }, 1000);
-    });
+    window.setTimeout(function() {
+        $mask.removeClass('is-loading');
+    }, 100);
 });
 
 function scroll_Top(){
