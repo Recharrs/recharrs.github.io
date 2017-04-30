@@ -4,7 +4,7 @@ $(window).on('load', function() {
     // Disable animations/transitions until the page has loaded.
     window.setTimeout(function() {
         $mask.removeClass('is-loading');
-    }, 100);
+    }, 10);
 });
 
 function scroll_Top(){
