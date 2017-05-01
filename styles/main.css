@@ -112,9 +112,9 @@ header {
 }
 
 #description-text {
-    margin: 2em 0 0 0;
-
-    text-align: center;
+    margin: 2em auto 0 auto;
+    max-width: 750px;
+    text-align: left;
     padding: 0 3em;
 }
 
